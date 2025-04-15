@@ -1,0 +1,84 @@
+@use "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: variables.$fontStyle;
+}
+
+body {
+  background: #030609;
+  background: linear-gradient(
+    300deg,
+    rgba(3, 6, 9, 1) 0%,
+    rgba(10, 19, 34, 1) 100%
+  );
+}
+
+.container {
+  max-width: 693px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.nav {
+  &__list {
+    display: flex;
+
+    &__item {
+      list-style: none;
+
+      &:nth-child(2) {
+        margin: 0 55px;
+      }
+
+      a {
+        text-decoration: none;
+        color: variables.$white;
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  color: variables.$white2;
+  max-height: 921px;
+  align-items: center;
+
+  span,
+  h2 {
+    white-space: nowrap;
+  }
+
+  &__text {
+    width: 50%;
+
+    p {
+        margin-bottom: 48px;
+    }
+  }
+
+  &__image {
+    max-height: 700px;
+    transform: scale(1.3);
+  }
+}
+
+.button {
+    background-color: #0052CE;
+    color: variables.$white;
+    border: none;
+    padding: 12px;
+    border-radius: 16px;
+}
