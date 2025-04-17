@@ -1,0 +1,22 @@
+@use "variables";
+
+.about {
+  hr {
+    width: 10%;
+  }
+
+  &__container {
+    display: flex;
+    background-color: reds;
+
+    &__content {
+      width: 100%;
+    }
+
+    .text {
+      max-width: 450px;
+      width: 100%;
+    }
+  }
+
+}

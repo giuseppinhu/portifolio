@@ -1,0 +1,71 @@
+@use "variables";
+
+.project {
+  color: variables.$white;
+  text-align: center;
+
+  hr {
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 0.2em;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .slider {
+    display: flex;
+    width: 100%;
+    column-gap: 5%;
+    margin-bottom: 8rem;
+
+    .card {
+      max-width: 300px;
+      padding: 8px;
+      border-radius: 20px;
+      background-color: #101d30;
+      text-align: start;
+
+      &:nth-child(1),
+      &:nth-child(4) {
+        opacity: 50%;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        transform: scale(1.1);
+      }
+
+      .image {
+        background-color: yellow;
+        height: 250px;
+        border-radius: 20px;
+      }
+
+      &__body {
+        margin-left: 8px;
+      }
+
+      &__image {
+        height: 250px;
+      }
+
+      &__title {
+        font-size: 1.1rem;
+        margin-top: 0.8em;
+        margin-bottom: 0.1em;
+      }
+
+      &__text {
+        font-size: 0.7rem;
+        max-width: 95%;
+        width: 100%;
+      }
+    }
+  }
+}

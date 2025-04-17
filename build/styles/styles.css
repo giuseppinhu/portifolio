@@ -1,21 +1,15 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@font-face {
+  font-family: "RocGrotesk";
+  src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Regular.otf") format("truetype");
 }
-
-body {
-  background: #030609;
-  background: linear-gradient(300deg, rgb(3, 6, 9) 0%, rgb(10, 19, 34) 100%);
+@font-face {
+  font-family: "RocGrotesk-medium";
+  src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Medium.otf") format("truetype");
 }
-
-.container {
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
+@font-face {
+  font-family: "RocGrotesk-bold";
+  src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Black.otf") format("truetype");
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -47,10 +41,15 @@ body {
 }
 .content span,
 .content h2 {
-  white-space: nowrap;
   color: #E4E6E6;
+  white-space: nowrap;
+}
+.content span {
+  font-family: "RocGrotesk";
+  font-size: 1.3em;
 }
 .content__title {
+  font-family: "RocGrotesk-medium";
   font-size: 2.2rem;
 }
 .content__text {
@@ -64,8 +63,118 @@ body {
   max-height: 700px;
   transform: scale(1.3);
 }
-.content .button {
-  width: 55%;
+@media (min-width: 1024px) {
+  .content .button {
+    width: 55%;
+  }
+}
+
+.project {
+  color: #FFFFFF;
+  text-align: center;
+}
+.project hr {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 0.2em;
+  margin-bottom: 8px;
+}
+.project__text {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+.project .slider {
+  display: flex;
+  width: 100%;
+  column-gap: 5%;
+  margin-bottom: 8rem;
+}
+.project .slider .card {
+  max-width: 300px;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #101d30;
+  text-align: start;
+}
+.project .slider .card:nth-child(1), .project .slider .card:nth-child(4) {
+  opacity: 50%;
+}
+.project .slider .card:nth-child(2), .project .slider .card:nth-child(3) {
+  transform: scale(1.1);
+}
+.project .slider .card .image {
+  background-color: yellow;
+  height: 250px;
+  border-radius: 20px;
+}
+.project .slider .card__body {
+  margin-left: 8px;
+}
+.project .slider .card__image {
+  height: 250px;
+}
+.project .slider .card__title {
+  font-size: 1.1rem;
+  margin-top: 0.8em;
+  margin-bottom: 0.1em;
+}
+.project .slider .card__text {
+  font-size: 0.7rem;
+  max-width: 95%;
+  width: 100%;
+}
+
+.about hr {
+  width: 10%;
+}
+.about__container {
+  display: flex;
+  background-color: reds;
+}
+.about__container__content {
+  width: 100%;
+}
+.about__container .text {
+  max-width: 450px;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #030609;
+  background: linear-gradient(300deg, rgb(3, 6, 9) 0%, rgb(10, 19, 34) 100%);
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #E4E6E6;
+}
+
+.text {
+  color: #FFFFFF;
+  font-family: "RocGrotesk";
+  font-size: 0.9rem;
+}
+
+hr {
+  background-color: #0052CE;
+  height: 3px;
+  border: none;
+  border-radius: 8px;
 }
 
 .button {
@@ -76,59 +185,6 @@ body {
   border-radius: 12px;
   font-size: 12px;
   white-space: nowrap;
-}
-
-.project {
-  color: #FFFFFF;
-  text-align: center;
-}
-.project__title {
-  font-size: 2.2rem;
-  color: #E4E6E6;
-}
-.project hr {
-  background-color: #0052CE;
-  height: 3px;
-  width: 50px;
-  border: none;
-  margin: 0 auto;
-  border-radius: 8px;
-  margin-top: 0.2em;
-  margin-bottom: 8px;
-}
-.project__text {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 0.9rem;
-}
-.project .slider {
-  background-color: red;
-  display: flex;
-}
-.project .slider .card {
-  max-width: 300px;
-  padding: 8px;
-  border-radius: 20px;
-  background-color: blue;
-  text-align: start;
-}
-.project .slider .card div {
-  background-color: yellow;
-  height: 250px;
-  border-radius: 20px;
-}
-.project .slider .card__image {
-  height: 250px;
-}
-.project .slider .card__title {
-  font-size: 1.3rem;
-  margin-top: 0.8em;
-  margin-bottom: 0.1em;
-}
-.project .slider .card__text {
-  background-color: green;
-  font-size: 0.9rem;
-  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

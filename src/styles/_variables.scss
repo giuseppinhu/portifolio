@@ -1,5 +1,22 @@
 $fontStyle: 'Poppins', sans-serif;
+$fontRegular: 'RocGrotesk';
+$fontMedium: 'RocGrotesk-medium';
+$fontBold: 'RocGrotesk-bold';
 
+@font-face {
+    font-family: "RocGrotesk";
+    src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "RocGrotesk-medium";
+    src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "RocGrotesk-bold";
+    src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Black.otf") format("truetype");
+}
 
 $blue: #0052CE; 
 $white: #FFFFFF;

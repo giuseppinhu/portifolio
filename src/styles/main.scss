@@ -1,4 +1,7 @@
 @use "variables";
+@use "hero";
+@use "project";
+@use "about";
 
 * {
   padding: 0;
@@ -22,137 +25,30 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.nav {
-  &__list {
-    display: flex;
-
-    &__item {
-      list-style: none;
-
-      &:nth-child(2) {
-        margin: 0 55px;
-      }
-
-      a {
-        text-decoration: none;
-        color: variables.$white;
-        font-weight: 400;
-        font-size: 0.9rem;
-      }
-    }
-  }
-}
-
-.content {
-  display: flex;
+.title {
+  font-size: 2.2rem;
   color: variables.$white2;
-  max-height: 921px;
-  align-items: center;
+}
 
-  span,
-  h2 {
-    white-space: nowrap;
-    color: variables.$white2;
-  }
+.text {
+  color: variables.$white;
+  font-family: variables.$fontRegular;
+  font-size: 0.9rem;
+}
 
-  &__title {
-    font-size: 2.2rem;
-  }
-
-  &__text {
-    width: 50%;
-
-    p {
-        margin-bottom: 35px;
-        font-size: 0.92rem;
-    }
-  }
-
-  &__image {
-    max-height: 700px;
-    transform: scale(1.3);
-  }
-
-  .button {
-    width: 55%;
-  }
+hr {
+  background-color: variables.$blue;
+  height: 3px;
+  border: none;
+  border-radius: 8px;
 }
 
 .button {
-    background-color: variables.$blue;
-    color: variables.$white;
-    border: none;
-    padding: 12px;
-    border-radius: 12px;
-    font-size: 12px;
-    white-space: nowrap;
-}
-
-.project {
+  background-color: variables.$blue;
   color: variables.$white;
-  text-align: center;
-
-  &__title {
-    font-size: 2.2rem;
-    color: variables.$white2;
-  }
-
-  hr {
-    background-color: variables.$blue;
-    height: 3px;
-    width: 50px;
-    border: none;
-    margin: 0 auto;
-    border-radius: 8px;
-    margin-top: .2em;
-    margin-bottom: 8px;
-  }
-
-  &__text {
-    max-width: 500px;
-    margin: 0 auto;
-    font-size: .9rem;
-  }
-
-
-  .slider {
-    background-color: red;
-    display: flex;
-    .card {
-      max-width: 300px;
-      padding: 8px;
-      border-radius: 20px;      
-      background-color: blue;
-      text-align: start;
-
-      div {
-        background-color: yellow;
-        height: 250px;
-        border-radius: 20px;
-      }
-
-      &__image {
-        height: 250px;
-      }
-
-      &__title {
-        font-size: 1.3rem;
-        margin-top: 0.8em;
-        margin-bottom: 0.1em;
-      }
-
-      &__text{
-        background-color: green;
-        font-size: .9rem;
-        width: 100%;
-      }
-    }
-    }
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  white-space: nowrap;
 }
