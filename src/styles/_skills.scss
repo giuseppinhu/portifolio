@@ -1,48 +1,51 @@
 .skills {
-    margin-bottom: 8em;
-    text-align: center;
+  margin-bottom: 8em;
+  text-align: center;
 
-    hr {
-        width: 5%;
-        margin: 0 auto;
-        margin-bottom: 0.5em;
-    }
+  hr {
+    width: 5%;
+    margin: 0 auto;
+  }
+
+  .text {
+    margin-top: 0.8rem;
+  }
 }
 
 .circle-container {
-    position: relative;
-    width: 171px;
-    height: 171px;
-    border-radius: 50%;
-  }
+  position: relative;
+  width: 171px;
+  height: 171px;
+  border-radius: 50%;
+}
 
-  .segment {
-    position: absolute;
-    width: 6px;
-    height: 28px;
-    background-color: #1f1f1f;
-    top: 0;
-    left: 50%;
-    transform-origin: center 85px;
-    border-radius: 3px;
-  }
+.segment {
+  position: absolute;
+  width: 6px;
+  height: 28px;
+  background-color: #1f1f1f;
+  top: 0;
+  left: 50%;
+  transform-origin: center 85px;
+  border-radius: 3px;
+}
 
-  .segment.active {
-    background-color: #0070f3;
-  }
+.segment.active {
+  background-color: #0070f3;
+}
 
-  .center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 32px;
-    font-weight: bold;
-    color: #ccc;
-  }
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #ccc;
+}
 
-  .label {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
+.label {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }

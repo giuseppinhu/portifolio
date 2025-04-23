@@ -9,7 +9,10 @@
 
   &__container {
     display: flex;
-    background-color: reds;
+
+    .image {
+      border-radius: 20px;
+    }
 
     &__content {
       width: 100%;
@@ -25,5 +28,4 @@
       width: 100%;
     }
   }
-
 }
