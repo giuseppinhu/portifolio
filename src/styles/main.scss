@@ -10,6 +10,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: variables.$fontStyle;
+  list-style: none;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     rgba(3, 6, 9, 1) 0%,
     rgba(10, 19, 34, 1) 100%
   );
+  overflow-x: hidden;
 }
 
 .container {

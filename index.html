@@ -9,13 +9,17 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="build/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>GDev - Portifolio</title>
   </head>
   <body>
     <div class="hero">
       <div class="container">
         <header class="header">
-          <img src="https://placehold.co/70x50" alt="logo" />
+          <div><span class="first"><b>G</b></span><div id="typewriter"></div><span>dev<b>.</b></span></div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__list__item">
@@ -35,7 +39,7 @@
             <span>Olá, me chamo</span>
             <h2 class="content__title">Giuseppe Ribeiro</h2>
             <p>
-              Desenvolvedor Full-Stack |
+              Desenvolvedor Full-Stack & Desenvolvedor Web |
             </p>
             <button class="button">Conheça meu trabalho</button>
           </div>
@@ -52,43 +56,49 @@
           Doloribus tenetur, eligendi
         </p>
       </div>
-      <div class="slider">
-        <div class="card">
-          <div class="image"></div>
-          <div class="card__body">
-            <h4 class="card__title">Titulo do Projeto</h4>
-            <p class="card__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="card-image"></div>
+            <div class="card-body">
+              <h3 class="card-title">Lorem Ipsum Dolor</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-        </div> 
-        <div class="card">
-          <div class="image"></div>
-          <div class="card__body">
-            <h4 class="card__title">Titulo do Projeto</h4>
-            <p class="card__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </p>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="card-image"></div>
+            <div class="card-body">
+              <h3 class="card-title">Lorem Ipsum Dolor</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-        </div> 
-        <div class="card">
-          <div class="image"></div>
-          <div class="card__body">
-            <h4 class="card__title">Titulo do Projeto</h4>
-            <p class="card__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </p>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="card-image"></div>
+            <div class="card-body">
+              <h3 class="card-title">Lorem Ipsum Dolor</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-        </div> 
-        <div class="card">
-          <div class="image"></div>
-          <div class="card__body">
-            <h4 class="card__title">Titulo do Projeto</h4>
-            <p class="card__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </p>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="card-image"></div>
+            <div class="card-body">
+              <h3 class="card-title">Lorem Ipsum Dolor</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-        </div> 
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="card-image"></div>
+            <div class="card-body">
+              <h3 class="card-title">Lorem Ipsum Dolor</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="about">
@@ -104,7 +114,7 @@
           </div>
         </div>
         <div>
-          <img src="/assets/mockup.png" alt="About Image" class="image">
+          <img src="src/assets/mockup.png" alt="About Image" class="image">
         </div>
       </div>
     </section>
@@ -113,11 +123,22 @@
         <h3 class="title">Habilidades</h3>
         <hr>
         <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        <ul>
-          <li>
-            <div class="circle-container">
-              <div class="center-text">JS</div>
-            </div>       
+        <ul class="skills__grid">
+          <li class="skills__grid__item">
+            <img src="//placehold.co/80x80" alt="Image Skill">
+            <h5>JavaScript</h5>
+          </li>
+          <li class="skills__grid__item">
+            <img src="//placehold.co/80x80" alt="Image Skill">
+            <h5>JavaScript</h5>
+          </li>
+          <li class="skills__grid__item">
+            <img src="//placehold.co/80x80" alt="Image Skill">
+            <h5>JavaScript</h5>
+          </li>
+          <li class="skills__grid__item">
+            <img src="//placehold.co/80x80" alt="Image Skill">
+            <h5>JavaScript</h5>
           </li>
         </ul>
       </div>
@@ -147,20 +168,8 @@
       </div>
     </section>
     <footer>Copyright &copy; 2025. Todos os direitos reservados.</footer>
-    <script>
-      const container = document.querySelector('.circle-container');
-      const totalSegments = 24;
-      const activeSegments = 18;
-
-      for (let i = 0; i < totalSegments; i++) {
-        const segment = document.createElement('div');
-        segment.classList.add('segment');
-        if (i < activeSegments) {
-          segment.classList.add('active');
-        }
-        segment.style.transform = `rotate(${(360 / totalSegments) * i}deg) translateX(-50%)`;
-        container.appendChild(segment);
-      }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>

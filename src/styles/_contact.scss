@@ -1,6 +1,8 @@
 @use "variables";
 
 .contact {
+  display: flex;
+  align-items: center;
   background-color: #132033;
   padding-top: 6em;
   padding-bottom: 4em;
