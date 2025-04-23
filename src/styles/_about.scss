@@ -1,6 +1,8 @@
 @use "variables";
 
 .about {
+  margin-bottom: 8em;
+
   hr {
     width: 10%;
   }
@@ -11,6 +13,11 @@
 
     &__content {
       width: 100%;
+      display: flex;
+
+      div {
+        margin: auto 0;
+      }
     }
 
     .text {

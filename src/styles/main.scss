@@ -2,6 +2,8 @@
 @use "hero";
 @use "project";
 @use "about";
+@use "skills";
+@use "contact";
 
 * {
   padding: 0;
@@ -51,4 +53,13 @@ hr {
   border-radius: 12px;
   font-size: 12px;
   white-space: nowrap;
+}
+
+footer {
+  text-align: center;
+  color: variables.$white2;
+  background-color: variables.$darkblue;
+  padding: .5rem 0;
+  font-size: 0.95rem;
+  font-family: variables.$fontRegular;
 }

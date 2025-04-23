@@ -126,6 +126,9 @@
   width: 100%;
 }
 
+.about {
+  margin-bottom: 8em;
+}
 .about hr {
   width: 10%;
 }
@@ -135,10 +138,111 @@
 }
 .about__container__content {
   width: 100%;
+  display: flex;
+}
+.about__container__content div {
+  margin: auto 0;
 }
 .about__container .text {
   max-width: 450px;
   width: 100%;
+}
+
+.skills {
+  margin-bottom: 8em;
+  text-align: center;
+}
+.skills hr {
+  width: 5%;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+.circle-container {
+  position: relative;
+  width: 171px;
+  height: 171px;
+  border-radius: 50%;
+}
+
+.segment {
+  position: absolute;
+  width: 6px;
+  height: 28px;
+  background-color: #1f1f1f;
+  top: 0;
+  left: 50%;
+  transform-origin: center 85px;
+  border-radius: 3px;
+}
+
+.segment.active {
+  background-color: #0070f3;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.label {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: #132033;
+  padding-top: 6em;
+  padding-bottom: 4em;
+  border-radius: 2.2rem 2.2rem 0 0;
+  min-height: 50vh;
+}
+.contact__container {
+  display: flex;
+}
+.contact hr {
+  width: 5%;
+  margin-bottom: 0.8rem;
+}
+.contact__text {
+  width: 50%;
+}
+.contact__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.contact__social__list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.contact__social__item {
+  background-color: transparent;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #E4E6E6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__social__item__link {
+  text-decoration: none;
+}
+.contact__social__item__link i {
+  font-size: 1.5em;
+  color: #E4E6E6;
+  height: 100%;
+  display: block;
+  margin: auto 0;
 }
 
 * {
@@ -185,6 +289,15 @@ hr {
   border-radius: 12px;
   font-size: 12px;
   white-space: nowrap;
+}
+
+footer {
+  text-align: center;
+  color: #E4E6E6;
+  background-color: #132033;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  font-family: "RocGrotesk";
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="build/styles/styles.css" />
     <title>GDev - Portifolio</title>
   </head>
@@ -107,5 +108,59 @@
         </div>
       </div>
     </section>
+    <section class="skills">
+      <div class="container">
+        <h3 class="title">Habilidades</h3>
+        <hr>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <ul>
+          <li>
+            <div class="circle-container">
+              <div class="center-text">JS</div>
+            </div>       
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__container container">
+        <div class="contact__text">
+          <h3 class="title">Meus Contatos</h3>
+          <hr>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cupiditate amet repellendus minus?
+          </p>
+        </div>
+        <div class="contact__social width">
+          <ul class="contact__social__list">
+            <li class="contact__social__item">
+              <a href="#" class="contact__social__item__link"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="contact__social__item">
+              <a href="#" class="contact__social__item__link"><i class="fa-brands fa-discord"></i></a>
+            </li>
+            <li class="contact__social__item">
+              <a href="#" class="contact__social__item__link"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>Copyright &copy; 2025. Todos os direitos reservados.</footer>
+    <script>
+      const container = document.querySelector('.circle-container');
+      const totalSegments = 24;
+      const activeSegments = 18;
+
+      for (let i = 0; i < totalSegments; i++) {
+        const segment = document.createElement('div');
+        segment.classList.add('segment');
+        if (i < activeSegments) {
+          segment.classList.add('active');
+        }
+        segment.style.transform = `rotate(${(360 / totalSegments) * i}deg) translateX(-50%)`;
+        container.appendChild(segment);
+      }
+    </script>
   </body>
 </html>
