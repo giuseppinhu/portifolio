@@ -41,7 +41,23 @@
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  position: relative;
+}
+.nav__list__item a::before {
+  content: " ";
+  height: 2px;
+  width: 0%;
+  opacity: 0;
+  background: transparent;
+  position: absolute;
+  bottom: -5px;
+  transition: all 0.3s linear;
+}
+.nav__list__item a:hover::before {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(17, 20, 28) 0%, rgb(19, 32, 51) 26%, rgb(228, 230, 230) 100%);
+  opacity: 1;
 }
 
 .content {
@@ -57,7 +73,7 @@
 }
 .content span {
   font-family: "RocGrotesk";
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 .content__title {
   font-family: "RocGrotesk-medium";
@@ -75,6 +91,8 @@
   transform: scale(1.2);
   margin-left: 70px;
   z-index: 0;
+  animation: levitation 5s infinite;
+  transition: levitation 5s ease-in-out;
 }
 @keyframes levitation {
   0% {
@@ -178,7 +196,7 @@
   margin: auto 0;
 }
 .about__container .text {
-  max-width: 450px;
+  max-width: 420px;
   width: 100%;
 }
 
@@ -186,26 +204,67 @@
   margin-bottom: 8em;
   text-align: center;
 }
+.skills .mg-bottom {
+  margin-bottom: 2em;
+}
+.skills .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .skills hr {
   width: 5%;
   margin: 0 auto;
 }
 .skills .text {
-  margin-top: 0.8rem;
+  margin: 0.95em 0 2em 0;
+}
+.skills__tec {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  gap: 10px;
 }
 .skills__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  gap: 10px;
+  margin: 0 auto;
 }
 .skills__grid__item {
-  background-color: red;
+  background-color: #132033;
+  max-width: 100px;
+  border-radius: 8px;
+  transition: all 1s linear;
+}
+.skills__grid__item:hover {
+  background-color: #E4E6E6;
+}
+.skills__grid__item:hover svg, .skills__grid__item:hover span {
+  fill: #132033;
+  color: #132033;
+}
+.skills__grid__item div {
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.skills__grid__item div svg {
+  fill: #E4E6E6;
+}
+.skills__grid__item span {
+  font-size: 0.85rem;
+  color: #E4E6E6;
 }
 
 .contact {
   display: flex;
   align-items: center;
   background-color: #132033;
-  padding-top: 6em;
+  padding-top: 5em;
   padding-bottom: 4em;
   border-radius: 2.2rem 2.2rem 0 0;
   min-height: 50vh;
@@ -240,6 +299,13 @@
   align-items: center;
   justify-content: center;
 }
+.contact__social__item:hover {
+  background-color: #E4E6E6;
+  border: 1px solid #132033;
+}
+.contact__social__item:hover i {
+  color: #132033;
+}
 .contact__social__item__link {
   text-decoration: none;
 }
@@ -257,6 +323,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   list-style: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -279,7 +350,7 @@ body {
 .text {
   color: #FFFFFF;
   font-family: "RocGrotesk";
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 hr {
@@ -290,6 +361,10 @@ hr {
   margin-bottom: 0.8rem;
 }
 
+section {
+  padding-top: 1rem;
+}
+
 .button {
   background-color: #0052CE;
   color: #FFFFFF;
@@ -298,6 +373,10 @@ hr {
   border-radius: 12px;
   font-size: 14px;
   white-space: nowrap;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(0, 92.1504854369, 231.5);
 }
 
 footer {

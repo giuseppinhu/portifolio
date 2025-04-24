@@ -3,8 +3,8 @@
 .contact {
   display: flex;
   align-items: center;
-  background-color: #132033;
-  padding-top: 6em;
+  background-color: variables.$darkblue;
+  padding-top: 5em;
   padding-bottom: 4em;
   border-radius: 2.2rem 2.2rem 0 0;
   min-height: 50vh;
@@ -42,6 +42,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &:hover {
+        background-color: variables.$white2;
+        border: 1px solid variables.$darkblue;
+      }
+
+      &:hover i {
+        color: variables.$darkblue;
+      }
 
       &__link {
         text-decoration: none;

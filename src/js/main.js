@@ -20,7 +20,7 @@ const swiper = new Swiper(".swiper-container", {
   loop: true,
   speed: 600,
   autoplay: {
-    delay: 100,
+    delay: 2000,
     pauseOnMouseEnter: true,
   },
 

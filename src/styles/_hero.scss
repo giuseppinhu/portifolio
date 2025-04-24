@@ -35,7 +35,30 @@
         text-decoration: none;
         color: variables.$white;
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        position: relative;
+
+        &::before {
+          content: " ";
+          height: 2px;
+          width: 0%;
+          opacity: 0;
+          background: transparent;
+          position: absolute;
+          bottom: -5px;
+          transition: all 0.3s linear;
+        }
+
+        &:hover::before {
+          width: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba(17, 20, 28, 1) 0%,
+            rgba(19, 32, 51, 1) 26%,
+            rgba(228, 230, 230, 1) 100%
+          );
+          opacity: 1;
+        }
       }
     }
   }
@@ -55,7 +78,7 @@
 
   span {
     font-family: variables.$fontRegular;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   &__title {
@@ -77,8 +100,8 @@
     transform: scale(1.2);
     margin-left: 70px;
     z-index: 0;
-    // animation: levitation 5s infinite;
-    // transition: levitation 5s ease-in-out;
+    animation: levitation 5s infinite;
+    transition: levitation 5s ease-in-out;
   }
 
   @keyframes levitation {
