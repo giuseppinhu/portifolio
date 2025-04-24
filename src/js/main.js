@@ -13,6 +13,8 @@ typewriter
   .start();
 
 // SLIDER
+const loading = document.getElementById("loading");
+
 const swiper = new Swiper(".swiper-container", {
   centeredSlides: true,
   slidesPerView: 2,
@@ -20,13 +22,21 @@ const swiper = new Swiper(".swiper-container", {
   loop: true,
   speed: 600,
   autoplay: {
-    delay: 2000000000,
+    delay: 5000,
     pauseOnMouseEnter: true,
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 40,
+      slidesPerView: 1,
+    },
+    640: { slidesPerView: 1 },
+    1024: { slidesPerView: 2 },
   },
 
   on: {
-    init: function () {
-      console.log("Swiper Carregado.");
+    init: () => {
+      loading.style.display = "none";
     },
   },
 });

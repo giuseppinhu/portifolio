@@ -13,8 +13,5 @@
   "type": "commonjs",
   "devDependencies": {
     "sass": "^1.86.3"
-  },
-  "dependencies": {
-    "typewriter-effect": "^2.21.0"
   }
 }
