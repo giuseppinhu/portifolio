@@ -133,7 +133,7 @@
 
 .swiper-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1080px;
   margin: auto;
   padding-bottom: 50px;
 }
@@ -158,9 +158,15 @@
 }
 
 .card-image {
-  background: url("/src/assets/mockup_dark.png") center/cover no-repeat;
-  height: 250px;
+  max-height: 250px;
+  height: 100%;
   margin: 8px;
+  border-radius: 16px;
+}
+.card-image img {
+  object-fit: cover;
+  width: 99%;
+  height: 100%;
   border-radius: 16px;
 }
 .card-body {
@@ -184,6 +190,9 @@
 }
 .card-body .links .button i {
   margin-left: 5px;
+}
+.card-body .links .button:hover {
+  background-color: rgb(25.9214285714, 43.6571428571, 69.5785714286);
 }
 .card-title {
   font-size: 1.1rem;
