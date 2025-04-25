@@ -105,17 +105,17 @@
     transition: levitation 5s ease-in-out;
   }
 
-  // @keyframes levitation {
-  //   0% {
-  //     transform: translateY(0) rotate(0deg) scale(1.2);
-  //   }
-  //   50% {
-  //     transform: translateY(-20px) rotate(2deg) scale(1.2);
-  //   }
-  //   100% {
-  //     transform: translateY(0) rotate(0deg) scale(1.2);
-  //   }
-  // }
+  @keyframes levitation {
+    0% {
+      transform: translateY(0) rotate(0deg) scale(1.2);
+    }
+    50% {
+      transform: translateY(-20px) rotate(2deg) scale(1.2);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg) scale(1.2);
+    }
+  }
 
   @media (min-width: 1024px) {
     .button {
