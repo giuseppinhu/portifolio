@@ -216,6 +216,7 @@
 }
 .about__container .image {
   border-radius: 20px;
+  width: 100%;
 }
 .about__container__content {
   width: 100%;
