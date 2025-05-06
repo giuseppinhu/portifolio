@@ -193,6 +193,12 @@
   margin: auto;
   padding-bottom: 50px;
 }
+@media (max-width: 468px) {
+  .swiper-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
 
 .swiper-slide {
   background: #151a2b;

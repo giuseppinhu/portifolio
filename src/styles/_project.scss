@@ -26,6 +26,11 @@
   max-width: 1080px;
   margin: auto;
   padding-bottom: 50px;
+
+  @media (max-width: variables.$mobile) {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 .swiper-slide {
