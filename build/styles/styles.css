@@ -123,6 +123,11 @@
   animation: levitation 5s infinite;
   transition: levitation 5s ease-in-out;
 }
+@media (max-width: 468px) {
+  .content__image {
+    display: none;
+  }
+}
 @keyframes levitation {
   0% {
     transform: translateY(0) rotate(0deg) scale(1.2);
