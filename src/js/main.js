@@ -40,3 +40,16 @@ const swiper = new Swiper(".swiper-container", {
     },
   },
 });
+
+const buttonHamburguer = document.getElementById("hamburguer");
+const navMobile = document.getElementById("nav__mobile");
+
+buttonHamburguer.addEventListener("click", IsOpen);
+
+function IsOpen() {
+  if (navMobile.classList.value == "nav__mobile") {
+    navMobile.classList.add("nav__mobile-is-open");
+  } else {
+    navMobile.classList.remove("nav__mobile-is-open");
+  }
+}

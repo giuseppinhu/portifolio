@@ -1,25 +1,33 @@
-$fontStyle: 'Poppins', sans-serif;
-$fontRegular: 'RocGrotesk';
-$fontMedium: 'RocGrotesk-medium';
-$fontBold: 'RocGrotesk-bold';
+$fontStyle: "Poppins", sans-serif;
+$fontRegular: "RocGrotesk";
+$fontMedium: "RocGrotesk-medium";
+$fontBold: "RocGrotesk-bold";
+
+// BreakPoint
+
+$tablet: 768px;
+$mobile: 468px;
+$desktop: 1024px;
 
 @font-face {
-    font-family: "RocGrotesk";
-    src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Regular.otf") format("truetype");
+  font-family: "RocGrotesk";
+  src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Regular.otf")
+    format("truetype");
 }
 
 @font-face {
-    font-family: "RocGrotesk-medium";
-    src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Medium.otf") format("truetype");
+  font-family: "RocGrotesk-medium";
+  src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Medium.otf")
+    format("truetype");
 }
 
 @font-face {
-    font-family: "RocGrotesk-bold";
-    src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Black.otf") format("truetype");
+  font-family: "RocGrotesk-bold";
+  src: url("../../src/assets/fonts/fonnts.com-Roc_Grotesk_Black.otf")
+    format("truetype");
 }
 
-$blue: #0052CE; 
-$darkblue: #132033; 
-$white: #FFFFFF;
-$white2: #E4E6E6;
-
+$blue: #0052ce;
+$darkblue: #132033;
+$white: #ffffff;
+$white2: #e4e6e6;
