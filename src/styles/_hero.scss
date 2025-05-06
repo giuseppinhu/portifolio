@@ -131,6 +131,10 @@
     z-index: -1;
     animation: levitation 5s infinite;
     transition: levitation 5s ease-in-out;
+
+    @media (max-width: variables.$mobile) {
+      display: none;
+    }
   }
 
   @keyframes levitation {
