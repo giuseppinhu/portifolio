@@ -27,7 +27,7 @@ jobs:
         run: yarn install
 
       - name: Rodar build com NPM
-        run: npm run build
+        run: npm run sass
 
       - name: Deploy para o GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
